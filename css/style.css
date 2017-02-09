@@ -1,114 +1,19 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
-.container {
-    max-width: 960px;
+/** {
+    border: 1px solid black;
+}*/
+body{
+    padding-top: 57px;
+    background-color: lightseagreen;
 }
-
-
-/* Navigation Bar  */
-
-.navbar {
-    font-family: 'Raleway', sans-serif;
-    background: #0288D1;
+nav {
+    background-color: none;
 }
-
-.navbar-nav.navbar-right li a {
-    color: #FFFFFF;
-}
-
-.navbar-default .navbar-brand {
-    color: #FFFFFF;
-}
-
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #000;
-}
-
-.navbar-default .navbar-nav>li>a:hover {
-    color: #000;
-    background-color: #01579B;
-}
-
-.active a {
-    background: #01579B !important;
-    color: #000 !important;
-}
-
-.text-center {
-    margin-bottom: 25px;
-    font-family: 'Raleway', sans-serif;
-}
-
-.vertical-align {
-    padding-top: 20px;
-}
-
-.img-caption {
-    padding-top: 15px;
-    font-size: 1.2em;
-}
-
-.jumbotron {
-    margin-bottom: 0;
-    background: #B3E5FC;
-}
-
-
-/* Table Styles  */
-
-img {
-    width: 500px;
-    height: 400px;
-}
-
-th {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
-    font-size: 40px;
-    padding: 20px 0 20px 0;
-}
-
-td {
-    padding: 40px;
-}
-
-
-/* End of Table  */
-
-.full-width {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    background: #B3E5FC;
-}
-
-.col-md-12 {
-    background: #0288D1;
-}
-
-textarea {
-    resize: none;
-}
-
-.text-msg {
-    font-size: 1.5em;
-    text-align: justify;
-    line-height: 1.9em;
-}
-
-label,
-button {
-    font-family: 'Raleway', sans-serif;
-}
-
-.ft-margin {
-    margin: 0;
-}
-
-.ft-last {
-    margin-top: 20px;
-    font-size: 1.2em;
-}
-
+/*@media (min-width:768px){ 
+    img {
+        width: 100%;
+    }
+}*/
 
 /*Social media*/
 
@@ -236,21 +141,9 @@ button {
 .social .fa-youtube-play:hover {
     background: #DF192A;
 }
+.text-center {
+    margin: 0px;
+}
 
 
 /*End social media*/
-
-
-/* CSS tests */
-
-section {
-    margin-top: 50px;
-}
-
-h1.text-center {
-    color: #ffffff;
-    margin-bottom: 60px;
-    letter-spacing: 2px;
-    background-color: #0288D1;
-    border-radius: 5px;
-}
