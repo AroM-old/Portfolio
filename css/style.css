@@ -7,7 +7,7 @@ body{
     background-color: lightseagreen;
 }
 nav {
-    background-color: yellow;
+    background-color: none;
 }
 /*@media (min-width:768px){ 
     img {
