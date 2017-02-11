@@ -11,123 +11,211 @@
 </head>
 
 <body>
-  <!--fixed navbar  -->
-  <nav class="navbar navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+  <header>
+    <!--fixed navbar  -->
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header" id="navbarspy">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Algenis Romero</a>
+          <a class="navbar-brand" href="#">Algenis Romero</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <!-- Collect the nav links to the right -->
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
       </div>
-      <div class="collapse navbar-collapse">
-        <!-- Collect the nav links to the right -->
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <!-- /.container -->
+    </nav>
+    <!-- About Me -->
+    <div class="container ">
+      <div class="row">
+        <!--Profile image-->
+        <div class="col-md-12">
+          <img class="img-responsive img-circle center-block" src="img/profile.png">
+        </div>
       </div>
-      <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container -->
-  </nav>
-  <!-- About Me -->
+      <div class="row">
+        <div class="col-md-8  col-md-offset-2">
+          <p>My name is Algenis Romero. I born in Dominican Republic where I had my first contact with computers and technology
+            in general. I did my firsts steps with DOS, QBasic, COBOL, Lotus 1-2-3, word perfect and much more software of
+            the time. I moved to New York City in 2010 and work for different companies that offered me new challenges every
+            time. I am currently living in Texas and working at the moment for the government while trying to keep my computer
+            passions with other family responsibilities, hobbies, friends and more.</p>
+          <p>I currently persuing the full stack development certification from <a href="http://www.freecodecamp.com" target="_blank">FreeCodeCamp</a>            and experiment with <a href="https://play.google.com/store/apps/developer?id=Algenis+Romero" target="_blank">Android apps development</a>,
+            UI/UX, graphics design and more. I am a family lover and music listener. Excellent handyman, do it myself and
+            self learning machine, friendly and always ready for help others.</p>
+        </div>
+      </div>
+  </header>
   <div class="container">
+    <!-- Porfolio -->
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center titles" id="portfolio">Portfolio</h1>
+        <hr>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-6">
-        <p>My name is <strong>Algenis</strong> a self taught web developer, web designer & photographer living in Texas, United
-          States. I'm a technology enthusiastic that use the power of internet to expand my knowledge.</p>
-        <p>I currently persuing the full stack development certification from <a href="http://www.freecodecamp.com" target="_blank">FreeCodeCamp</a>          and experiment with <a href="https://play.google.com/store/apps/developer?id=Algenis+Romero" target="_blank">Android apps development</a>,
-          UI/UX, graphics design and more. I am a family lover and music listener. Excellent handyman, do it myself and self
-          learning machine, friendly and always ready for help others.</p>
+        <img class="img-responsive" src="img/img1.jpg" data-toggle="modal" data-target="#modal1">
+        <a class="btn btn-primary button-block" role="button" href="https://codepen.io/algenisromero/full/zoxjGX/" target="_blank">Learn more..</a>
       </div>
-      <!--Profile image-->
       <div class="col-md-6">
-        <img class="img-responsive img-circle" src="img/profile.png">
+        <img class="img-responsive" src="img/img2.jpg" data-toggle="modal" data-target="#modal2">
+        <a class="btn btn-primary button-block" role="button" href="https://algenisromero.github.io/QuoteMachine-FCC/" target="_blank">Learn more..</a>
       </div>
-      <!-- Porfolio -->
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center" id="portfolio">PORTFOLIO</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <a href="https://codepen.io/algenisromero/full/JYwQLE/" target="_blank" class="thumbnail"><img class="img-responsive" src="img/img1.jpg"></a>
-        </div>
-        <div class="col-md-4">
-          <a href="https://codepen.io/algenisromero/full/yJAvKP/" target="_blank" class="thumbnail"><img class="img-responsive" src="img/img2.jpg"></a>
-        </div>
-        <div class="col-md-4">
-          <a href="https://codepen.io/algenisromero/full/yJAvKP/" target="_blank" class="thumbnail"><img class="img-responsive" src="img/img3.jpg"></a>
-        </div>
-      </div>
-      <!-- Contact -->
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center" id="contact">CONTACT ME</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <form>
-            <div class="form-group">
-              <label class="control-label " for="name">Name</label>
-              <input class="form-control" id="name" name="name" type="text" />
-            </div>
-            <div class="form-group">
-              <label class="control-label " for="email">Email</label>
-              <input class="form-control" id="email" name="email" type="text" />
-            </div>
-            <div class="form-group">
-              <label class="control-label " for="phone">Subject</label>
-              <input class="form-control" id="subject" name="subject" type="text" />
-            </div>
-            <div class="form-group">
-              <label class="control-label " for="message">Message</label>
-              <textarea class="form-control" cols="20" id="message" name="message" type="text" rows="5"></textarea>
-            </div>
-            <div class="form-group">
-              <button class="btn btn-primary " name="submit" type="submit">Send</button>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-6">
-          <p class="text-justify">Thanks for visiting my website, please get in touch with me if you have more question about myself or my journeys,
-            if you want code with me, if you have a question about anything or even just talk, please feel free to reach
-            me using the contact form or any of you preferred social media, thanks and happy coding! </p>
-          <h3 class="text-center">FOLLOW ME ON SOCIAL MEDIA</h3>
-          <div class="social">
-            <ul class="text-center">
-              <li><a href="https://www.facebook.com/algenisromero" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/algenisromero" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
-              <li><a href="https://plus.google.com/u/0/+algenisromero" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
-              <li><a href="https://github.com/algenisromero" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
-              <li><a href="https://www.pinterest.com/algenisromero/" target="_blank"><i class="fa fa-lg fa-pinterest"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/algenis-romero-4ab88658" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
-              <li><a href="https://www.instagram.com/algenisromero/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
-              <li><a href="https://stackoverflow.com/users/2956911/algenis" target="_blank"><i class="fa fa-lg fa-stack-overflow"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!--Footer & Social Media-->
-      <footer>
-        <div class="row">
-          <div class="col-md-12">
-            <p class="text-center">RMR &copy; 2016. All rights reserved</p>
-          </div>
-        </div>
-      </footer>
     </div>
-    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
-    <script src="js/index.js"></script>
+    <div class="row">
+      <div class="col-md-6">
+        <img class="img-responsive" src="img/img3.jpg" data-toggle="modal" data-target="#modal3">
+        <a class="btn btn-primary button-block" role="button" href="https://codepen.io/algenisromero/full/yJAvKP/" target="_blank">Learn more..</a>
+      </div>
+      <div class="col-md-6">
+        <img class="img-responsive" src="img/img4.jpg" data-toggle="modal" data-target="#modal4">
+        <a class="btn btn-primary button-block" role="button" href="https://codepen.io/algenisromero/full/XNNoed/" target="_blank">Learn more..</a>
+      </div>
+    </div>
+    <!-- Modal One -->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Web Development</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/modal1.png" alt="Guitar website" class="img-responsive">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Two -->
+    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Web Development</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/modal2.png" alt="Guitar website" class="img-responsive">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Three -->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Web Development</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/modal3.png" alt="Guitar website" class="img-responsive">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Four -->
+    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Web Development</h4>
+          </div>
+          <div class="modal-body">
+            <img src="img/modal4.png" alt="Guitar website" class="img-responsive">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center titles" id="contact">Contact Me</h1>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label class="control-label " for="name">Name</label>
+            <input class="form-control" id="name" name="name" type="text" />
+          </div>
+          <div class="form-group">
+            <label class="control-label " for="email">Email</label>
+            <input class="form-control" id="email" name="email" type="text" />
+          </div>
+          <div class="form-group">
+            <label class="control-label " for="phone">Subject</label>
+            <input class="form-control" id="subject" name="subject" type="text" />
+          </div>
+          <div class="form-group">
+            <label class="control-label " for="message">Message</label>
+            <textarea class="form-control" cols="20" id="message" name="message" type="text" rows="5"></textarea>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-primary " name="submit" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <p class="text-justify" id="contact-info">Thanks for visiting my website, please get in touch with me if you have more question about myself or my journeys,
+          if you want code with me, if you have a question about anything or even just talk, please feel free to reach me
+          using the contact form or any of you preferred social media, thanks and happy coding! </p>
+        <h3 class="text-center">FOLLOW ME ON SOCIAL MEDIA</h3>
+        <div class="social">
+          <ul class="text-center">
+            <li><a href="https://www.facebook.com/algenisromero" target="_blank"><i class="fa fa-lg fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/algenisromero" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+            <li><a href="https://plus.google.com/u/0/+algenisromero" target="_blank"><i class="fa fa-lg fa-google-plus"></i></a></li>
+            <li><a href="https://github.com/algenisromero" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+            <li><a href="https://www.pinterest.com/algenisromero/" target="_blank"><i class="fa fa-lg fa-pinterest"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/algenis-romero-4ab88658" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/algenisromero/" target="_blank"><i class="fa fa-lg fa-instagram"></i></a></li>
+            <li><a href="https://stackoverflow.com/users/2956911/algenis" target="_blank"><i class="fa fa-lg fa-stack-overflow"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Footer & Social Media-->
+  <footer>
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-center">Made with <span class="glyphicon glyphicon-heart"></span> by Algenis Romero &copy; 2017. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
